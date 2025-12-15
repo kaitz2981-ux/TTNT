@@ -116,8 +116,6 @@ GA là một thuật toán tối ưu hóa dựa trên cơ chế tiến hóa tự
 
 Tuần 04 đã thành công trong việc chuyển đổi trọng tâm từ tìm kiếm logic sang **tìm kiếm tối ưu hóa**, với sự áp dụng của các thuật toán phức tạp và mạnh mẽ như TSP và Giải thuật Di truyền để giải quyết các bài toán về chi phí và quy hoạch trong thế giới thực.
 
----
-
 ------------------------------------------------------------------------------------------------------------------------------------
 
 # Tuần 05: HỌC MÁY
