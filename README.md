@@ -1,12 +1,12 @@
 # TTNT
 > Kho mã này tổng hợp 03 bài thực hành, được xây dựng tập trung vào tối ưu hóa thuật toán, cấu trúc mã rõ ràng (function, class), và hỗ trợ giao diện tương tác.
 
-## 📄 MỤC LỤC
+## MỤC LỤC
 
-1.  [Bài 1: Giải Sudoku bằng Thuật toán Quay lui (Tuan3)](#1-bài-1-giải-sudoku-bằng-thuật-toán-quay-lui-tuan3)
-2.  [Bài 2: Bài toán Tô màu Đồ thị (Tuan4)](#2-bài-2-bài-toán-tô-màu-đồ-thị-tuan4)
-3.  [Bài 3: Bài toán Người Du lịch (TSP - Tuan5)](#3-bài-3-bài-toán-người-du-lịch-tsp---tuan5)
-4.  [Hướng Dẫn Chạy & Yêu cầu Demo](#4-hướng-dẫn-chạy--yêu-cầu-demo)
+1.  [Bài 1: Giải Sudoku bằng thuật toán quay lui (Tuan3)](#1-bài-1-giải-sudoku-bằng-thuật-toán-quay-lui-tuan3)
+2.  [Bài 2: Bài toán tô màu đồ thị (Tuan4)](#2-bài-2-bài-toán-tô-màu-đồ-thị-tuan4)
+3.  [Bài 3: Bài toán người du lịch (TSP - Tuan5)](#3-bài-3-bài-toán-người-du-lịch-tsp---tuan5)
+4.  [Hướng dẫn chạy & yêu cầu demo](#4-hướng-dẫn-chạy--yêu-cầu-demo)
 
 ---
 
