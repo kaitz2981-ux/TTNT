@@ -4,8 +4,8 @@
 
 | STT | Bài tập | Thuật toán | Ma trận Ứng dụng | Ghi chú |
 | :--- | :--- | :--- | :--- | :--- |
-| **I.1** | Cài đặt Minimax | Minimax | 3x3 | Thuật toán cốt lõi. |
-| **I.2** | Cài đặt Cắt tỉa Alpha-beta | Alpha-Beta Pruning | 3x3 | Tối ưu hóa tốc độ tìm kiếm. |
+| **BTTL 1** | Cài đặt Minimax | Minimax | 3x3 | Thuật toán cốt lõi. |
+| **BTTL 2** | Cài đặt Cắt tỉa Alpha-beta | Alpha-Beta Pruning | 3x3 | Tối ưu hóa tốc độ tìm kiếm. |
 | **BTVN 3 & 4** | Mở rộng Minimax & Alpha-beta | Minimax & Alpha-Beta Pruning | NxN (5x5, 10x10) | Yêu cầu phải sử dụng Hàm Lượng Giá Heuristic. |
 | **BTVN 5** | Ứng dụng Alpha-beta | Alpha-Beta Pruning | Cờ Tướng, Cờ Vua, Cờ Vây | Phân tích lý thuyết về hàm Heuristic và Move Generator. |
 | **BTVN 6** | Xây dựng Giao diện Đồ họa | Tkinter/OpenCV | 3x3 | Tích hợp AI vào giao diện người dùng. |
