@@ -22,12 +22,8 @@
 ### Tính năng Demo (Input Động)
 Để đáp ứng yêu cầu demo tương tác, chương trình cho phép người dùng **nhập vào ma trận Sudoku ban đầu** dưới dạng List of Lists trong một cell input. Điều này chứng minh khả năng xử lý **thông số động**.
 
-**Ví dụ Input (Người dùng có thể thay đổi ma trận này):**
-```python
-# Mở cell code và thay đổi input:
-board = [
-    [5, 3, 0, 0, 7, 0, 0, 0, 0],
-    [6, 0, 0, 1, 9, 5, 0, 0, 0],
-    # ... (Các hàng khác)
-    [0, 0, 0, 0, 8, 0, 0, 7, 9]
-]
+### Kết quả chạy 
+![Bảng TicTacToe giữa người chơi và AI ] (images/TTNT_Tuan03.png)
+
+---
+
