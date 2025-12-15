@@ -14,7 +14,7 @@
 
 **Tệp mã nguồn:** `Tuan3.ipynb`
 
-### Mục tiêu & Phương pháp
+### Mục tiêu & phương pháp
 * **Mục tiêu:** Tìm kiếm lời giải cho bảng Sudoku.
 * **Phương pháp:** Sử dụng **Thuật toán Quay lui (Backtracking)**. Đây là một phương pháp tìm kiếm vét cạn có tổ chức, thuật toán thử đặt một số hợp lệ vào ô trống và quay lui khi không tìm thấy lời giải tiếp theo. 
 * **Cấu trúc Code:** Mã nguồn được định nghĩa rõ ràng bằng các **hàm (function)** như `is_safe` (kiểm tra tính hợp lệ của số được đặt), `find_empty_location` (tìm ô trống tiếp theo), và `solve_sudoku` (hàm chính thực hiện quay lui), đảm bảo tính tối ưu và dễ đọc.
