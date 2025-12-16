@@ -1,6 +1,6 @@
 # Tuần 03: GIẢI THUẬT TÌM KIẾM ĐỐI KHÁNG
 
-## 1. Tóm tắt Các Yêu cầu Đã Triển khai
+## 1. Tóm tắt các yêu cầu đã triển khai
 
 | STT | Bài tập | Thuật toán | Ma trận Ứng dụng | Ghi chú |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12,7 +12,7 @@
 
 ---
 
-## 2. Phân tích Thuật toán Cốt lõi
+## 2. Phân tích thuật toán cốt lõi
 
 ### 2.1. Cấu trúc trò chơi 
 
@@ -31,7 +31,7 @@ Thuật toán được xây dựng dựa trên các thành phần cơ bản củ
     * Hàm `minValue(state)`: Tìm nước đi tốt nhất cho MIN (tìm giá trị nhỏ nhất).
     * Thuật toán duyệt toàn bộ cây trò chơi cho đến trạng thái kết thúc (`terminal(state)`).
 
-### 2.3. Thuật toán Cắt tỉa Alpha-beta (Alpha-Beta Pruning)
+### 2.3. Thuật toán cắt tỉa Alpha-beta (Alpha-Beta Pruning)
 
 Alpha-beta là một tối ưu hóa của Minimax, cho phép loại bỏ các nhánh cây tìm kiếm không cần thiết mà không ảnh hưởng đến kết quả cuối cùng.
 
@@ -44,12 +44,12 @@ Alpha-beta là một tối ưu hóa của Minimax, cho phép loại bỏ các nh
 
 ## 3. BTVN
 
-### 3.1. Ứng dụng cho Ma trận $N \times N$ (Bài 3 & 4)
+### 3.1. Ứng dụng cho ma trận $N \times N$ (Bài 3 & 4)
 
 * **Vấn đề:** Khi kích thước $N$ tăng ($N=5, 10$), không gian trạng thái bùng nổ, Minimax vét cạn không khả thi.
 * **Giải pháp:** Phải sử dụng **Cắt tỉa Alpha-beta** và giới hạn độ sâu (Depth-Limited Search), kết hợp với **Hàm Lượng giá Heuristic $E(n)$** để ước lượng giá trị của các trạng thái không kết thúc.
 
-### 3.2. Ứng dụng vào Game Cờ phức tạp (Bài 5)
+### 3.2. Ứng dụng vào game Cờ phức tạp (Bài 5)
 
 Việc ứng dụng Alpha-beta cho Cờ Tướng/Vua/Vây đòi hỏi các thành phần phức tạp hơn:
 
@@ -58,7 +58,7 @@ Việc ứng dụng Alpha-beta cho Cờ Tướng/Vua/Vây đòi hỏi các thàn
 
 ---
 
-## 4. Giao diện Đồ họa (Bài 6)
+## 4. Giao diện đồ họa (Bài 6)
 
 * **Công cụ:** Sử dụng thư viện `Tkinter` (hoặc `OpenCV` như trong ví dụ `Thuật giải Minimax 2`) để xây dựng GUI.
 * **Tích hợp AI:** Lớp `GUI` hoặc hàm `mainLoop` gọi hàm `minimax` hoặc `FindBestMove` (sử dụng Alpha-beta) để xác định nước đi của máy tính và cập nhật trạng thái bảng.
@@ -75,30 +75,30 @@ Việc ứng dụng Alpha-beta cho Cờ Tướng/Vua/Vây đòi hỏi các thàn
 
 ---
 
-## 2. Chi tiết Triển khai Kỹ thuật
+## 2. Chi tiết triển khai kỹ thuật
 
-### 2.1. Bài toán Người bán hàng (Traveling Salesperson Problem - TSP)
+### 2.1. Bài toán người bán hàng
 
 TSP là một bài toán NP-Hard yêu cầu tìm chu trình ngắn nhất đi qua mọi đỉnh (thành phố) chỉ một lần.
 
 * **Mô hình Dữ liệu:** Sử dụng ma trận kề để biểu diễn chi phí (quãng đường) giữa các thành phố.
 * **Chiến lược Giải quyết (Ví dụ triển khai):**
-    * **Tham lam (Nearest Neighbor):** Bắt đầu từ một thành phố và luôn chọn thành phố gần nhất chưa đi qua. Giải pháp nhanh, nhưng chỉ cho kết quả gần tối ưu.
-    * **Quy hoạch Động (Held-Karp):** Cung cấp giải pháp tối ưu cho N nhỏ ($N \le 20$), nhưng có độ phức tạp cao $O(N^2 2^N)$.
+    * **Tham lam:** Bắt đầu từ một thành phố và luôn chọn thành phố gần nhất chưa đi qua. Giải pháp nhanh, nhưng chỉ cho kết quả gần tối ưu.
+    * **Quy hoạch Động:** Cung cấp giải pháp tối ưu cho N nhỏ ($N \le 20$), nhưng có độ phức tạp cao $O(N^2 2^N)$.
 
-### 2.2. Giải thuật Di truyền (Genetic Algorithm - GA) cho Sắp xếp Lịch
+### 2.2. Giải thuật di truyền cho sắp xếp lịch
 
 GA là một thuật toán tối ưu hóa dựa trên cơ chế tiến hóa tự nhiên, rất hiệu quả cho các bài toán Quy hoạch phức tạp với nhiều ràng buộc (như sắp xếp lịch học). 
 
-* **Mô hình Hóa (Representation):**
+* **Mô hình Hóa:**
     * **Chromosome (Gen):** Một chuỗi số hoặc đối tượng đại diện cho một lịch học hoàn chỉnh. Ví dụ: một mảng chứa thông tin [Giáo viên, Môn học, Lớp, Thời gian].
-* **Hàm Thích nghi (Fitness Function):** Đánh giá chất lượng của lịch, điểm số càng cao nếu lịch càng thỏa mãn các ràng buộc:
-    * **Ràng buộc Cứng (Hard Constraints):** Không vi phạm luật (Ví dụ: 1 giáo viên không thể dạy 2 lớp cùng lúc, số tiết học phải đủ). Vi phạm dẫn đến điểm Fitness rất thấp (gần 0).
-    * **Ràng buộc Mềm (Soft Constraints):** Tính tối ưu (Ví dụ: Phân bố tiết học đều, không dạy quá nhiều tiết liên tiếp). Thỏa mãn giúp tăng điểm Fitness.
+* **Hàm thích nghi :** Đánh giá chất lượng của lịch, điểm số càng cao nếu lịch càng thỏa mãn các ràng buộc:
+    * **Ràng buộc cứng:** Không vi phạm luật (Ví dụ: 1 giáo viên không thể dạy 2 lớp cùng lúc, số tiết học phải đủ). Vi phạm dẫn đến điểm Fitness rất thấp (gần 0).
+    * **Ràng buộc mềm :** Tính tối ưu (Ví dụ: Phân bố tiết học đều, không dạy quá nhiều tiết liên tiếp). Thỏa mãn giúp tăng điểm Fitness.
 * **Các Toán tử Gen:**
-    * **Selection (Chọn lọc):** Chọn ra các cá thể tốt nhất (lịch tốt nhất) để lai tạo (Ví dụ: Roulette Wheel, Tournament Selection).
-    * **Crossover (Lai ghép):** Kết hợp gen của hai lịch tốt để tạo ra lịch mới (Ví dụ: Single-Point Crossover).
-    * **Mutation (Đột biến):** Thay đổi ngẫu nhiên một phần nhỏ của lịch để khám phá các giải pháp mới và tránh bị mắc kẹt tại cực trị địa phương (Local Maxima).
+    * **Selection (Chọn lọc):** Chọn ra các lịch tốt nhất để đề xuất (Ví dụ: Roulette Wheel, Tournament Selection).
+    * **Kết hợp:** Kết hợp thời gian của hai lịch tốt để tạo ra lịch mới (Ví dụ: Single-Point Crossover).
+    * **Ngẫu biến:** Thay đổi ngẫu nhiên một phần nhỏ của lịch để khám phá các giải pháp mới và tránh bị mắc kẹt tại cực trị địa phương (Local Maxima).
 
 ---
 
@@ -120,7 +120,7 @@ Tuần 04 đã thành công trong việc chuyển đổi trọng tâm từ tìm 
 
 # Tuần 05: HỌC MÁY
 
-## 1. Tóm tắt Các Yêu cầu Đã Triển khai
+## 1. Tóm tắt Các yêu cầu đã triển khai
 
 | STT | Bài tập | Kỹ thuật | Phân loại Học | Ghi chú |
 | :--- | :--- | :--- | :--- | :--- |
@@ -131,7 +131,7 @@ Tuần 04 đã thành công trong việc chuyển đổi trọng tâm từ tìm 
 
 ---
 
-## 2. Phân tích Kỹ thuật và Cài đặt
+## 2. Phân tích kỹ thuật và cài đặt
 
 ### 2.1. Kỹ thuật K-Means Clustering (Học không giám sát)
 
@@ -148,8 +148,8 @@ K-Means là một phương pháp đơn giản nhưng hiệu quả để chia d�
 
 K-NN dùng để phân loại quan sát mới bằng cách so sánh điểm tương đồng với dữ liệu đã có nhãn.
 
-* **Nguyên lý Phân loại:** Chọn $K$ điểm láng giềng gần nhất, sau đó gán nhãn cho điểm mới bằng nhãn có số lượng lớn nhất trong $K$ láng giềng đó (ví dụ: $K=5$, 3 tam giác, 2 chữ thập -> gán nhãn tam giác).
-* **Cài đặt Hàm `KNN` thủ công:**
+* **Nguyên lý phân loại:** Chọn $K$ điểm láng giềng gần nhất, sau đó gán nhãn cho điểm mới bằng nhãn có số lượng lớn nhất trong $K$ láng giềng đó (ví dụ: $K=5$, 3 tam giác, 2 chữ thập -> gán nhãn tam giác).
+* **Cài đặt hàm `KNN` thủ công:**
     * Tính khoảng cách Euclidean từ mỗi điểm kiểm tra đến tất cả điểm huấn luyện.
     * Sắp xếp khoảng cách theo chiều tăng dần.
     * Đếm số lượng của mỗi lớp trong top K láng giềng để đưa ra quyết định phân loại.
