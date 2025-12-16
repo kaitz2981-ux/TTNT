@@ -38,11 +38,11 @@ Alpha-beta là một tối ưu hóa của Minimax, cho phép loại bỏ các nh
 * **Nguyên tắc cắt tỉa:** Việc cắt tỉa xảy ra khi $\alpha \ge \beta$. 
     * $\alpha$ (alpha): Giá trị tốt nhất mà MAX có thể đảm bảo được tính đến thời điểm hiện tại. (Luôn tăng)
     * $\beta$ (beta): Giá trị tốt nhất mà MIN có thể đảm bảo được tính đến thời điểm hiện tại. (Luôn giảm)
-* **Giải thích Vấn đề Cắt tỉa:** Nếu tại một nút MIN, giá trị $\beta$ hiện tại (ví dụ: $\beta \le 3$) nhỏ hơn hoặc bằng giá trị $\alpha$ đã được đảm bảo ở nút MAX cha (ví dụ: $\alpha \ge 10$), thì nhánh đó sẽ không bao giờ được chọn, và việc tìm kiếm ở các nút con còn lại sẽ bị dừng (cắt tỉa).
+* **Giải thích:** Nếu tại một nút MIN, giá trị $\beta$ hiện tại (ví dụ: $\beta \le 3$) nhỏ hơn hoặc bằng giá trị $\alpha$ đã được đảm bảo ở nút MAX cha (ví dụ: $\alpha \ge 10$), thì nhánh đó sẽ không bao giờ được chọn, và việc tìm kiếm ở các nút con còn lại sẽ bị dừng (cắt tỉa).
 
 ---
 
-## 3. Triển khai Mở rộng (Bài tập về nhà)
+## 3. BTVN
 
 ### 3.1. Ứng dụng cho Ma trận $N \times N$ (Bài 3 & 4)
 
@@ -53,8 +53,8 @@ Alpha-beta là một tối ưu hóa của Minimax, cho phép loại bỏ các nh
 
 Việc ứng dụng Alpha-beta cho Cờ Tướng/Vua/Vây đòi hỏi các thành phần phức tạp hơn:
 
-* **Bộ tạo Nước đi Hợp lệ (Move Generator):** Phải mã hóa toàn bộ luật chơi phức tạp (như luật chiếu, bắt quân).
-* **Hàm Đánh giá (Evaluation Function):** Hàm Heuristic phức tạp, tính toán không chỉ lợi thế vật chất mà còn lợi thế vị trí, khả năng tấn công/phòng thủ, và các yếu tố chiến thuật khác.
+* **Tạo nước đi hợp lệ:** Phải mã hóa toàn bộ luật chơi phức tạp (như luật chiếu, bắt quân).
+* **Hàm đánh giá:** Hàm Heuristic phức tạp, tính toán không chỉ lợi thế vật chất mà còn lợi thế vị trí, khả năng tấn công/phòng thủ, và các yếu tố chiến thuật khác.
 
 ---
 
