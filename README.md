@@ -21,7 +21,7 @@ Thuật toán được xây dựng dựa trên các thành phần cơ bản củ
 * **Trạng thái ban đầu (Initial State):** Ma trận trò chơi rỗng + Xác định người chơi bắt đầu (X hoặc O).
 * **Hàm chuyển trạng thái (Successor):** Trả về trạng thái mới sau khi thực hiện một nước đi hợp lệ.
 * **Hàm lợi ích (Utility Function):** Đánh giá kết quả cuối cùng: +1 (X thắng), -1 (O thắng), 0 (Hòa).
-* **Hàm Lượng giá Heuristic E(n):** Được sử dụng cho các ma trận lớn (NxN) khi tìm kiếm tuyệt đối không khả thi: $E(n) = X(n) - O(n)$ (Số khả năng thắng của X trừ đi số khả năng thắng của O).
+* **Hàm lượng giá Heuristic E(n):** Được sử dụng cho các ma trận lớn (NxN) khi tìm kiếm tuyệt đối không khả thi: $E(n) = X(n) - O(n)$ (Số khả năng thắng của X trừ đi số khả năng thắng của O).
 
 ### 2.2. Thuật toán Minimax
 
@@ -49,7 +49,7 @@ Alpha-beta là một tối ưu hóa của Minimax, cho phép loại bỏ các nh
 * **Vấn đề:** Khi kích thước $N$ tăng ($N=5, 10$), không gian trạng thái bùng nổ, Minimax vét cạn không khả thi.
 * **Giải pháp:** Phải sử dụng **Cắt tỉa Alpha-beta** và giới hạn độ sâu (Depth-Limited Search), kết hợp với **Hàm Lượng giá Heuristic $E(n)$** để ước lượng giá trị của các trạng thái không kết thúc.
 
-### 3.2. Ứng dụng vào game Cờ phức tạp (Bài 5)
+### 3.2. Ứng dụng vào game cờ phức tạp (Bài 5)
 
 Việc ứng dụng Alpha-beta cho Cờ Tướng/Vua/Vây đòi hỏi các thành phần phức tạp hơn:
 
